@@ -1,7 +1,6 @@
-import 'package:flubar/navigation/first.dart';
 import 'package:flutter/material.dart';
 
-class NavigationPage extends StatelessWidget {
+class SecondPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return _build(context);
@@ -10,7 +9,7 @@ class NavigationPage extends StatelessWidget {
   Scaffold _build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Navigation'),
+        title: Text('Second Page'),
       ),
       body: _buildBody(context),
     );
@@ -19,12 +18,9 @@ class NavigationPage extends StatelessWidget {
   Widget _buildBody(BuildContext context) {
     return Center(
       child: ElevatedButton(
-        child: Text('First page'),
+        child: Text('Go back'),
         onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => FirstPage()),
-          );
+          Navigator.pop(context);
         },
       ),
     );

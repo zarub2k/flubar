@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flubar/navigation/navigation.dart';
 
 void main() {
   runApp(MyApp());
@@ -22,7 +23,8 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flubar'),
+      // home: MyHomePage(title: 'Flubar'),
+      home: NavigationPage(),
     );
   }
 }
