@@ -17,16 +17,21 @@ class NavigationPage extends StatelessWidget {
   }
 
   Widget _buildBody(BuildContext context) {
-    return Center(
-      child: ElevatedButton(
-        child: Text('First page'),
-        onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => FirstPage()),
-          );
-        },
-      ),
+    return Row(
+      children: [
+        
+      ],
     );
+    // return Center(
+    //   child: ElevatedButton(
+    //     child: Text('First page'),
+    //     onPressed: () {
+    //       Navigator.push(
+    //         context,
+    //         MaterialPageRoute(builder: (context) => FirstPage()),
+    //       );
+    //     },
+    //   ),
+    // );
   }
 }
