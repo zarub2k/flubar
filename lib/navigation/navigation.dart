@@ -1,5 +1,5 @@
-import 'package:flubar/navigation/first.dart';
 import 'package:flutter/material.dart';
+import 'package:flubar/navigation/first.dart';
 
 class NavigationPage extends StatelessWidget {
   @override
